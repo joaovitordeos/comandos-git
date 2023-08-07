@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt br">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,43 @@
     </h2>
     <p>
         <code>git add &lt;arquivo&gt;</code> <br>
-        Usado para adicionar um novo arquivo ao repositório.
+        Usado para adicionar um novo arquivo para ser "commitado".
+    </p>
+    <hr>
+
+    <h2>
+        git commit
+    </h2>
+    <p>
+        <code>git commit -&lt;args&gt; &lt;mensagem&gt;</code> <br>
+        Usado para criar uma indentidade para as alterações feitas no repositório. <br>
+        É útil para saber o que foi feito em cada alteração no projeto. Há uma <br>
+        convensão para o seu uso. <a href="https://www.conventionalcommits.org/en/v1.0.0/">Acesse aqui.</a>
+    </p>
+    <hr>
+
+    <h2>
+        git pull
+    </h2>
+    <p>
+        <code>git pull</code> <br>
+        <p>
+            Comando usado para sincronizar os arquivos do repositório da núvem, <br>
+            com os arquivos do repositório local. É uma boa prática usar antes do comando <br>
+            "<code>git push</code>" pois evita sobrescrições equivocadas no código principal.
+        </p>
+    </p>
+    <hr>
+
+    <h2>
+        git push
+    </h2>
+    <p>
+        <code>git push</code> <br>
+        Sincroniza os arquivos do branch (ramificação) desejada com os arquivos <br>
+        alterados no repositório local. Deve-se tomar cuidado com para não <br>
+        não sobrescrever nenhum arquivo importante, é recomendado o uso do comando <br>
+        "<code>git pull</code>" para evitar problemas dessa natureza.
     </p>
 </body>
 </html>

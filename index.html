@@ -143,6 +143,22 @@
         de um arquivo) e o <code>git switch</code> que altera entre os branchs, mas o <code>git
         checkout</code> ainda continua tendo a mesma finalidade de ambos.
     </p>
+    <hr>
+    
+    <h2>
+        O arquivo ".gitignore"
+    </h2>
+    <p>
+        O ".gitignore" é um arquivo especial da ferramenta git que é usado para
+        excluir do escopo do projeto certos arquivos, ou seja, nomes de arquivos
+        específicos contidos nas linhas do <em>.gitignore</em> não serão sincronizados
+        com todo o projeto. Ex: <br> Se não quisermos que o arquivo lixo.txt seja 
+        sincronizado durante o processo de sincronização de arquivos, adicionamos o seu
+        nome em uma das linhas do <em>.gitignore</em>. <br> O <em>.gitignore</em>
+        usa o sistema de expansão e coringas do bash shell, isso significa que podemos
+        ignorar uma pasta inteira simplesmente usando <em>nome_pasta/*</em>, dessa forma
+        todos os arquivos em <em>nome_pasta/</em> não serão contabilizados pelo git.
+    </p>
     
 
 </body>

@@ -106,7 +106,7 @@
     </h2>
     <p>
         <code>git rm &lt;arquivo&gt;</code> <br>
-        Remove um arquivo do repositório.
+        Remove um arquivo do repositório. Similar ao <em>"rm"</em> do bash no linux.
     </p>
     <hr>
 
@@ -119,5 +119,31 @@
         de cada commit, assim como a data e a mensagem de cada alteração.
         <br> Nota mental: <br> <em>Log = Registro</em>
     </p>
+    <hr>
+
+    <h2>
+        git mv
+    </h2>
+    <p>
+        <code>git mv &lt;arquivo&gt; &lt;novo_nome_arquivo&gt;</code> <br>
+        Funciona de forma análoga ao comando <em>"mv"</em> do bash no linux, pode ser 
+        usado tanto para renomear um arquivo tanto para mover de local o mesmo.
+    </p>
+    <hr>
+
+    <h2>
+        git checkout
+    </h2>
+    <p>
+        <code>git checkout </code> <br>
+        Usado para a alternancia entre ramificações e também para a restauração de versões 
+        específicas de um arquivo. Por exemplo, queremos trocar do branch main para um secundario,
+        ou queremos desfazer uma alteração de um arquivo. <br>
+        Nas versões mais recentes temos os comando <code>git restore</code> (que restaura a versão
+        de um arquivo) e o <code>git switch</code> que altera entre os branchs, mas o <code>git
+        checkout</code> ainda continua tendo a mesma finalidade de ambos.
+    </p>
+    
+
 </body>
 </html>

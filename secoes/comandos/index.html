@@ -175,26 +175,29 @@
         <ul>
             <li>
                 <code>git reset --soft &lt;commit&gt;:</code>
+                <p>
+                    Resposável por desfazer o commit desejado sem desfazer as alterações
+                    no editor ou no projeto em sí.
+                </p>
             </li>
-            <p>
-                Resposável por desfazer o commit desejado sem desfazer as alterações
-                no editor ou no projeto em sí.
-            </p>
+            
 
             <li>
                 <code>git reset --mixed &lt;commit&gt;:</code>
+                <p>
+                    É o comportamento padrão do comando <em>git reset</em>, desfaz o commit e o torna
+                    pronto para ser <em>commitado</em> novamente, não desfazendo qualquer alteração no projeto.
+                </p>
             </li>
-            <p>
-                É o comportamento padrão do comando <em>git reset</em>, desfaz o commit e o torna
-                pronto para ser <em>commitado</em> novamente, não desfazendo qualquer alteração no projeto.
-            </p>
+            
             <li>
                 <code>git --hard &lt;commit&gt;:</code>
+                <p>
+                    É o comando forçado para desfazer determinada alteração, apagando o commit e também 
+                    todas as alterações do projeto.
+                </p>
             </li>
-            <p>
-                É o comando forçado para desfazer determinada alteração, apagando o commit e também 
-                todas as alterações do projeto.
-            </p>
+            
         </ul>
         <hr>
     </p>

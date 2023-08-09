@@ -67,7 +67,8 @@
         Podemos ter alguns problemas ao realizar o <em>merge</em> pois é comum termos conflitos entre os branchs,
         esses conflitos devem ser resolvidos manualmente. <br>
         <b>Você sempre deve estar ciente ao usar o <em>merge</em>, verifique se todos os commits e atualizações
-        necessárias foram feitas.</b>
+        necessárias foram feitas. Geralmente é mais indicado que <em>merges</em> no ramo principal sejam feitos
+        de forma manual e calma pelo responsável pelo projeto.</b>
     </p>
     <hr>
 
@@ -75,6 +76,14 @@
         Salvando temporáriamente Branchs - Stash
     </h2>
     <p>
+        Algumas vezes queremos fazer um <em>save</em> em alguma mudança antes de alterar a branch atual, sem 
+        querer perder todo o progresso até o momento. Para esse problema podemos usar uma espécie de lixeira
+        que guarda alterações de forma temporária usando o comando <code>git stash</code>. <br>
+        Ao usar o comando <em>stash</em> todas as alterações feitas serão salvas em arquivos temporários e 
+        desfeitas no branch atual. <br>
+        É possível ver as <em>stashes</em> criadas no branchs a partir do comando <code>git stash list</code> ou 
+        recuperar por meio do comando <code>git shatsh &lt;code_stash&gt;</code>. <br>
+        Ao recuperar as <em>stashes</em> as últimas alterações são desfeitas.
 
     </p>
     <hr>

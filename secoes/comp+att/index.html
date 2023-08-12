@@ -44,6 +44,41 @@
         Se você tiver certeza de suas modificações e commit é comum finalizar essa etapa com o comando 
         <code>git push</code>.
     </p>
-    
+    <hr>
+
+    <h2>
+        Alterando endereços remotos de Repositórios - Remote
+    </h2>
+    <p>
+        Para realizar comandos de sincronização como o <em>push</em> e o <em>pull</em> precisamos primeiro
+        saber qual é o repositório alvo desses comandos. <br> Para isso usamos o comando comando <code>git remote</code>
+        com ele podemos visualizar os endereços já existente, apagá-los ou até inserir novos endereços.
+        <ul>
+            <li><p>
+                <code>git remote -v</code>: Exibe todos os endereços de diretórios atuais.
+            </p></li>
+            <li><p>
+                <code>git remote add &lt;nome_repo&gt; &lt;endereço&gt;</code>: Adiciona um novo endereço de repo.
+            </p></li>
+            <li><p>
+                <code>git remove/rm &lt;nome_repo&gt;</code>: Remove o endereço para o repositório selecionado.
+            </p></li>
+        </ul> <br>
+        Isso é importante quando precisamos usar novos reposítórios sem a necessidade de clonar todos os arquivos
+        novamente, poupando tempo, dados e memória.
+    </p>
+    <hr>
+
+    <h2>
+        Repositórios dentro de repositórios - Submodules
+    </h2>
+    <p>
+        Dependendo de cada projeto, a dependência entre softwares pode se tornar presente e caso essa dependência 
+        seja de um projeto presente em outro repositório é possível aninhar outro repositório dentro do repositório
+        princial a partir do comando <code>git submodule add &lt;nome_repo&gt;</code> e para verificar quais são os
+        submódulos usamos apenas <code>git submodule</code>.
+        A partir disso é possível implementar o projeto usando esses dois repositórios, trantando-o como uma branch
+        cujo qual pode receber updates também.
+    </p>
 </body>
 </html>

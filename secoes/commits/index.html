@@ -17,6 +17,75 @@
         <li><a href="index.html">Commits</a></li>    
     </ul>
     <hr>
+    <h2>
+        Qual a importância de escrever bons commits?
+    </h2>
+    <p>
+        Como já vimos o comando <code>git commit</code> é responsável por criar uma marcação no
+        projeto cujo qual o objetivo é a resolução de algum problema ou implementação de alguma
+        feature. Entretanto, quando utilizados de forma equivocada e desplanejada essa ferramenta
+        podemos obter os efeitos contrários ao que ele deveria causar, ou seja, ao invés de obtermos
+        mais controle e um projeto mais organizado o que obtemos é um emaranhado de alterações
+        mal explicadas afetando o desenvolvimento e eficiência. <br> Por outro lado quando
+        combinamos com a equipe estratégias e padronizações dos commits podemos melhorar a qualidade
+        de vida do nosso projeto e fica muito mais fácil de depurá-lo e evitar bugs.
+    </p>
+    <hr>
+
+    <h2>
+        Como melhorar os nossos commits?
+    </h2>
+    <ol>
+        <li>
+            <h3>Padronização:</h3>
+            <p>
+                Para que ao usar os comando de <code>log</code> que mostram todas as alterações
+                realizadas no projeto encontramos algo agradável (ou menos pior) de se ler precisamos
+                primeiramente combinar uma estratégia de padronização dos commits. Nesse caso, pode 
+                se acordado o valor máximo de caracteres que a mensagem principal de um commit deva
+                ter assim como o texto de sua explicação. Existem várias convesões de padronização
+                de commits, particularmente a que eu mais gosto é essa:
+                <a href="https://www.conventionalcommits.org/en/v1.0.0/">Clica aqui &lt;3</a>. <br>Nessa
+                convenção é criada palavras chaves que indicam o motivo do commit seguido por ":" e 
+                logo após uma breve mensagem sobre o que foi feito ex: <br>
+                <code>
+                    feat: adicionado mensagem de texto
+                </code> <br>
+            </p>
+        </li>
+        <li>
+            <h3>
+                Uso de mensagens chaves:
+            </h3>
+            <p>
+                Como já foi dito no <em>spoiler</em> dado no final do texto anterior, o uso de
+                palavras chaves que já indentificam um commit logo no início já acelera e muito o
+                processo de análise de commits. Já pensou em usar o comando <code>git log</code> e 
+                logo no inicio de cada commit já souber o motivo de cada commit? Seria ótimo, né!
+            </p>
+        </li>
+    </ol>
+    <hr>
+
+    <h2>
+        Tecnica "Bônus"
+    </h2>
+    <ol>
+        <li>
+            <h3>
+                Uso de Branchs privados:
+            </h3>
+            <p>
+                Se você ainda sim preferir por querer usar os commits de maneira mais flexível, o
+                uso de branchs privados é uma alternativa. Nesse caso, usamos um branch não
+                compartilhado com o repositório remoto e nele pode ser usado qualquer tipo de commit.
+                Entretanto, ao terminar a sua tarefa nesse branch podemos usar o comando: <br>
+                <code>git rebase &lt;branch_atual&gt; &lt;branch_privado&gt; -i</code> <br>
+                Com ele, é possível escolher quais commits enviar para o branch de destino e também
+                edita-los usando um editor de texto interativo (muito parecido com o <a href="https://www.vim.org/">VIM</a>).
+            </p>
+        </li>
+    </ol>
     
 </body>
 </html>
